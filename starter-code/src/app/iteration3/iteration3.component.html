@@ -1,0 +1,15 @@
+<div class="titles">
+  <ul class="titles-list">
+  <li *ngFor="let element of titles">
+    <h1> Title Won: {{element.title}}</h1>
+    <h2> Date of Title: {{ element.year}}</h2>
+    <img src="{{element.titleLogo}}">
+    <ul class="listPlayers">
+      <p>Best Players:</p>
+      <li *ngFor="let player of element.best_players">
+        <h4> {{player}} </h4>
+      </li>
+    </ul>
+    </li>
+</ul>
+  </div>
